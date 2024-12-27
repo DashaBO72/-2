@@ -1,28 +1,51 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Лаборатона робота №3", "Лаборатона робота №3\Лаборатона робота №3.vcxproj", "{B32C1260-34E9-428C-8CDC-7FD629220311}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B32C1260-34E9-428C-8CDC-7FD629220311}.Debug|x64.ActiveCfg = Debug|x64
-		{B32C1260-34E9-428C-8CDC-7FD629220311}.Debug|x64.Build.0 = Debug|x64
-		{B32C1260-34E9-428C-8CDC-7FD629220311}.Debug|x86.ActiveCfg = Debug|Win32
-		{B32C1260-34E9-428C-8CDC-7FD629220311}.Debug|x86.Build.0 = Debug|Win32
-		{B32C1260-34E9-428C-8CDC-7FD629220311}.Release|x64.ActiveCfg = Release|x64
-		{B32C1260-34E9-428C-8CDC-7FD629220311}.Release|x64.Build.0 = Release|x64
-		{B32C1260-34E9-428C-8CDC-7FD629220311}.Release|x86.ActiveCfg = Release|Win32
-		{B32C1260-34E9-428C-8CDC-7FD629220311}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-EndGlobal
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+  { cout << "Hello!!!\n";
+   cout << "\n\n";
+   cout << "\t\t\b\b----------\n";
+   cout << "\t\t\b\b|        |\n";
+   cout << "\t\t\b\b|        |\n";
+   cout << "\t\t\b\b|        |\n";
+   cout << "\t\t\b\b|        |\n";
+   cout << "\t\t\b\b----------\n";
+   cout << "         Прізвище: Бойко\n";
+   cout << "             ім'я: Дар'я\n";
+   cout << "      По батькові: Олегівна\n";
+   cout << "            Стать: жіноча\n";
+   cout << "  Дата народження: 02-04-2007\n";
+   cout << "           Адреса: місто Запоріжжя, вул. Бочарова, буд.\n";
+   cout << "   Номер телефону: +380509600697\n";
+   cout << "   Місце навчання: ФПМ, ДНУ ім. Олеся Гончара\n";
+   cout << "            Група: ПА-24-1\n";
+   cout << "             Хобі: рукопашний бій\n";
+   cout << "\t\t\t/\\\n";
+	   cout << "\t\t\t\b/  \\\n";
+	   cout << "\t\t\t\b\\  /\n";
+	   cout << "\t\t\t\\/ \n";
+	   
+   system("pause");}
+	{
+		char line[51];
+		do {
+			cout << "Введіть рядок (щоб завершити програму натисніть ENTER): ";
+			cin.getline(line, 51);
+			if (line[0] != '\0') {
+				cout << line << endl;
+			}
+		} while (line[0] != '\0');
+		system("pause");
+	}
+
+	
+
+   
+
+
+}
